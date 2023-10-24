@@ -1,0 +1,124 @@
+body{
+    background-color: #0ec026ad;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.header img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.header i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---- DIARIO ---- */
+
+.diario-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.diario-container .diario-escrita,
+.diario-leitura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.diario-escrita form {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #0ec026;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form label{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+form input,
+textarea {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 60%;
+}
+
+form button {
+    height: 35px;
+    cursor: pointer;
+    background-color: #0b4e14;
+    color: #fff;
+    border-radius: 20px;
+    border: 5px solid #0b4e14;
+}
+
+form button:hover{
+    transition: 0.7s;
+    background-color: #fff;
+    color: #0b4e14;
+}
+
+.lista-diario {
+    max-width: 550px;    
+}
+
+.lista-diario .entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #0b4e14;
+}
+
+.entrada .data{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.entrada .descricao{
+    text-align: center;
+}
+
+.entrada button{
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #FF1616;
+    border: 3px solid #FF1616;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.entrada button:hover{
+    transition: 0.7s;
+    background-color: #fff;
+    color: #FF1616;
+}

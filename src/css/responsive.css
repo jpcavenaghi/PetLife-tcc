@@ -1,0 +1,194 @@
+@media(max-width:770px) {
+
+    /* HEADER */
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cadastro-entre .btn-entre {
+        padding-left: 15px;
+    }
+
+    /* HERO */
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero .texto-hero {
+        margin-top: 3%;
+    }
+
+    .hero .img-hero {
+        margin-top: 0;
+    }
+
+    /* SERVIÇOS */
+
+    .servicos .servicos-itens {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:471px) {
+
+    /* HEADER */
+
+    ul .btn-cadastro a:hover {
+        transition: all 0.8s;
+        background-color: #fff;
+        color: #8a5d11;
+    }
+
+    ul .btn-entre a:hover {
+        transition: 0.5s;
+        box-shadow: rgba(255, 255, 255, 0.836) 0px 5px,
+            rgba(240, 238, 239, 0.3) 0px 10px, rgba(187, 187, 187, 0.2) 0px 15px,
+            rgba(207, 207, 207, 0.1) 0px 20px, rgba(228, 228, 228, 0.05) 0px 25px;
+    }
+}
+
+@media(max-width:470px) {
+
+    /* HEADER */
+
+    .header {
+        min-height: 100vh;
+        background-color: #f4d7ae;
+        color: #000;
+    }
+
+    .header .logo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo .img-logo {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .header .cadastro-entre ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .cadastro-entre ul li a {
+        font-size: 2rem;
+        color: #000;
+        font-weight: 400;
+    }
+
+    .cadastro-entre .btn-entre {
+        background-color: #ff9900;
+        border-radius: 30px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .cadastro-entre .btn-entre a {
+        color: #fff;
+    }
+
+    ul .btn-cadastro a {
+        background: none;
+        padding-top: 0;
+    }
+
+
+    .header .divisoria {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .divisoria .risco {
+        width: 50%;
+        height: 2px;
+        background-color: #8a5d11;
+    }
+
+    .cadastro-entre span {
+        margin-top: 10px;
+    }
+
+    .divisoria span,
+    .cadastro-entre span {
+        font-size: 1.5rem;
+    }
+
+    .cadastro-entre ul span,
+    .header .cadastro-mobile {
+        display: block;
+    }
+
+
+    .header .cadastro-mobile i {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    /* HERO */
+
+    .hero {
+        display: none;
+    }
+
+    /* SERVIÇOS */
+
+    .servicos {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        display: none;
+    }
+}
+
+@media(max-height: 1080px) {
+
+    .menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 5% 0;
+    }
+
+    .hero .titulo-hero {
+        font-size: 1.9rem;
+    }
+
+    .hero .paragrafo-hero {
+        font-size: 1.5rem;
+    }
+
+    .servicos {
+        padding: 3% 0;
+    }
+
+     .servicos-item .item-titulo{
+        font-size: 1.8rem;
+    }
+
+    .servicos-item .item-paragrafo{
+        font-size: 1.5rem;
+    }
+}

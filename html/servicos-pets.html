@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLife - Serviços</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../src/css/style-servicos.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/font-awesome.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../src/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../html/home.html"><i class="fa-solid fa-house"></i></a>
+
+        <div class="pet-e-foto">
+            <img src="" alt="imagem do cachorro" id="imgPetLogado">
+            <h1 id="nomePetLogado"></h1>
+        </div>
+    </header>
+
+    <section class="servicos" >
+        <div class="card-servicos" onclick="window.location.href = '../html/carteiravac.html' ">
+            <img src="../src/image/vacinação.png" alt="vacinação" class="img-servicos">
+            <h2 class="titulo-servicos">Carteira De Vacinação</h2>
+            <p class="paragrafo-servicos">
+                Mantenha o registro completo das vacinas do seu pet, garantindo sua saúde e bem-estar. Tenha sempre em
+                mãos todas as informações importantes sobre as vacinas administradas.
+            </p>
+        </div>
+        <div class="card-servicos" onclick="window.location.href = '../html/consultas.html' ">
+            <img src="../src/image/estetoscopio.png" alt="estetoscopio" class="img-servicos">
+            <h2 class="titulo-servicos">Controle De Consultas</h2>
+            <p class="paragrafo-servicos">
+                Acompanhe o histórico de saúde do seu pet, agende consultas e mantenha todos os cuidados em dia, de
+                forma simples e organizada.
+            </p>
+        </div>
+        <div class="card-servicos"  onclick="window.location.href = '../html/medicamentos.html' ">
+            <img src="../src/image/medicamento.png" alt="medicamentos" class="img-servicos">
+            <h2 class="titulo-servicos">Controle De Medicamentos</h2>
+            <p class="paragrafo-servicos">
+                Registre os medicamentos prescritos, doses e horários, garantindo que seu amigo peludo receba os
+                cuidados necessários de forma organizada e eficaz.
+            </p>
+        </div>
+        <div class="card-servicos" onclick="window.location.href = '../html/diario.html' ">
+            <img src="../src/image/livro.png" alt="livro" class="img-servicos">
+            <h2 class="titulo-servicos">Diário Geral</h2>
+            <p class="paragrafo-servicos">
+                Mantenha um registro completo das atividades diárias do seu pet, incluindo alimentação, exercícios,
+                brincadeiras e qualquer outro evento relevante.
+            </p>
+        </div>
+       
+       <div class="card-servicos" onclick="window.location.href = '../html/gasto.html' ">
+            <img src="../src/image/dinheiro.png" alt="" class="img-servicos">
+            <h2 class="titulo-servicos">Controle De Gastos</h2>
+            <p class="paragrafo-servicos">
+                Registre todos os gastos relacionados ao seu pet, como despesas com alimentos, cuidados veterinários,
+                brinquedos e muito mais.
+            </p>
+        </div>
+    </section>
+</body>
+<script src="../src/js/servicos.js"></script>
+
+</html>

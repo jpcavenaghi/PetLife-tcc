@@ -1,0 +1,107 @@
+body{
+    background-color: #BFBFBF;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.header img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.header i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---- CONTAINER-CONSULTAS ---- */
+
+.container-consultas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ---- FORM ---- */
+
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    max-width: 500px;
+    padding: 30px;
+
+    margin: auto;
+    background-color: #87A0AE;
+}
+
+form label{
+    font-size: 1.2rem;
+}
+
+form input {
+    border: 3px solid #fff;
+    padding: 5px;
+}
+
+form button{
+    padding: 5px;
+    border: 3px solid #32BD00;
+    background-color: #32BD00;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover{
+    transition: 0.7s;
+    background-color: #fff;
+    color: #32BD00;
+}
+
+/* ---- CARDS ---- */
+
+#consultas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.consulta-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background-color: #32BD00;
+    color: #fff;
+    padding: 15px;
+    height: 200px;
+}
+
+.consulta-card i{
+    color: #595959;
+    cursor: pointer;
+}
+
+.consulta-card,
+form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

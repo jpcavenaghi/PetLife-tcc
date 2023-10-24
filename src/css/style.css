@@ -1,0 +1,206 @@
+body {
+  display: grid;
+  grid-template-areas: "header header"
+    "hero hero"
+    "services services"
+    "footer footer";
+  font-family: 'Poo',
+    sans-serif;                                          
+}
+
+/* HEADER */
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  background-color: var(--marrom-escuro-padrao);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding: 0 20px;
+}
+
+.logo .img-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.header .menu ul {
+  display: flex;
+}
+
+.header .menu ul li {
+  padding: 7px;
+}
+
+
+.header .cadastro-entre ul {
+  display: flex;
+}
+
+.cadastro-entre ul li {
+  padding: 15px;
+}
+
+.cadastro-entre .btn-entre {
+  padding-left: 0px;
+}
+
+ul .btn-cadastro a {
+  background-color: var(--laranja-padrao);
+  border-radius: 30px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.menu ul li a,
+.cadastro-entre ul li a {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.menu ul li a:hover,
+.cadastro-entre ul li a {
+  font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--bege-padrao);
+}
+
+.hero .texto-hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 60%;
+  margin: auto;
+}
+
+.hero .titulo-hero {
+  font-size: 1.7rem;
+}
+
+.hero .paragrafo-hero {
+  font-size: 1.4rem;
+}
+
+.hero .img-hero {
+  width: 450px;
+  height: 500px;
+
+  border-radius: 15%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 5% auto;
+}
+
+h2 i {
+  color: var(--marrom-escuro-padrao);
+}
+
+/* SERVIÇOS */
+
+.servicos {
+  grid-area: services;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #df9423;
+}
+
+.servicos .servicos-titulo {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+.servicos .servicos-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+  gap: 30px;
+}
+
+.servicos-itens .servicos-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+
+}
+
+.servicos-item .item-titulo {
+  font-size: 1.3rem;
+}
+
+.servicos .item-paragrafo {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.servicos-item i {
+  font-size: 3rem;
+  color: #8a5d11;
+}
+
+/* FOOTER */
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  background-color: #302107;
+}
+
+.footer .footer-titulo {
+  font-size: 2.5rem;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer .redes-sociais a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.redes-sociais a i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.redes-sociais i:hover {
+  transition: 0.5s;
+  box-shadow: rgba(253, 253, 253, 0.795) 0px 30px 90px;
+}
+
+/* DIVERSOS */
+
+@font-face {
+  font-family: 'Poo';
+  src: url(../font/ClementePDai-Regular.ttf);
+}
+
+.header .divisoria,
+.cadastro-entre ul span,
+.header .cadastro-mobile{
+  display: none;
+}

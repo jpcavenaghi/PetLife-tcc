@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLife - Login</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../src/css/style-login.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/font-awesome.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../src/image/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <a class="seta-voltar" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <div class="container">
+
+        <div class="form">
+
+            <div class="titulo">
+                <h2>LOGIN</h2>
+                <i class="fa-solid fa-paw"></i>
+            </div>
+
+            <span id="msgErro"></span>
+
+            <label id="labelEmail" for="email">Email:</label>
+            <input type="email" name="" id="email">
+
+            <div class="label-icon">
+                <label id="labelSenha" for="senha">Senha:</label>
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <input type="password" name="" id="senha">
+
+            <input class="input-submit" type="submit" value="LOGAR" onclick="logar()">
+
+            <span>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></span>
+
+        </div>
+        <img src="../src/image/animais.jpg" alt="pibull">
+
+    </div>
+
+</body>
+<script src="../src/js/login.js"></script>
+
+</html>

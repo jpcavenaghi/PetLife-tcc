@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLife - Controle De Medicamentos</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../src/css/style-medicamentos.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/font-awesome.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../src/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../src/image/medicamento.png" alt="bolsa de dinheiro">
+        <h1>Controle De Medicamentos</h1>
+    </header>
+
+    <div class="container-lembretes">
+        <form id="formulario-despertador">
+            <label for="nome-despertador">Nome do Remédio:</label>
+            <input type="text" id="nome-despertador" required>
+
+            <label for="data-despertador">Data do Alarme:</label>
+            <input type="date" id="data-despertador" required>
+
+            <label for="horario-despertador">Horário do Alarme:</label>
+            <input type="time" id="horario-despertador" required>
+
+            <button id="btnAlarme" type="submit">Definir Alarme</button>
+        </form>
+
+        <div id="lembretes" class="lembretes"></div>
+    </div>
+    <audio id="alerta-sonoro">
+        <source src="../src/image/alarm.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+</body>
+<script src="../src/js/medicamentos.js"></script>
+
+</html>

@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    height: 100vh;
+    background-color: var(--laranja-padrao);
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.header img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.header i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---- MAIN ---- */
+
+main {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#totalGastoText {
+    font-size: 1.3rem;
+}
+
+.novo-item {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.descricao,
+.quantia {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.novo-item>button {
+    background-color: #2C73D2;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+}
+
+.tabela {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+table {
+    width: 98%;
+    border-radius: 5px;
+}
+
+th {
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+}
+
+i {
+    font-size: 25px;
+}
+
+.fa-chevron-up {
+    background-color: #00C9A7;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.fa-chevron-down {
+    background-color: #D83121;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.fa-trash {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.coluna-acao {
+    width: 40px;
+    text-align: center;
+}
+
+.coluna-acao>button {
+    background: transparent;
+    border: none;
+}
+
+.coluna-quantia {
+    width: 30%;
+}
+
+.coluna-tipo {
+    width: 80px;
+    text-align: center;
+}
+
+/* ---- RESPONSIVO ---- */
+
+@media(max-width:500px) {
+    body {
+        text-align: center;
+        gap: 5%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media(min-width:1400px) {
+    main {
+        max-width: 60%;
+    }
+
+    #totalGastoText {
+        font-size: 2rem;
+    }
+
+    th {
+        font-size: 1.7rem;
+    }
+
+    label {
+        font-size: 1.7rem;
+    }
+
+    td {
+        font-size: 1.7rem;
+    }
+}

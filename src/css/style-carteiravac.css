@@ -1,0 +1,107 @@
+body {
+    background-color: #3075DB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    color: #fff;
+}
+
+.header img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.header i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---- CARTEIRA DE VACINAÇÃO ---- */
+
+.container-carteira {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 150px));
+    background-color: #fff;
+    border: 4px solid #40c4f8;
+    border-radius: 20px;
+    padding: 15px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0px 20px;
+}
+
+.container-carteira button {
+    cursor: pointer;
+    background-color: #40c4f8;
+    border: 3px solid #40c4f8;
+    border-radius: 20px;
+}
+
+.container-carteira button:hover {
+    transition: 0.7s;
+    background-color: #fff;
+}
+
+.container-carteira .item-vacina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px;
+}
+
+.item-vacina i {
+    cursor: pointer;
+    color: gray;
+}
+
+.container-carteira .form-vacina {
+    display: flex;
+    height: 100px;
+    gap: 5px;
+    border-bottom: 1px solid;
+    padding: 10px 0 15px 0;
+}
+
+.form-vacina .data-medico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* ---- RESPONSIVO ---- */
+
+@media(max-width:560px) {
+    .container-carteira {
+        grid-template-columns: 1fr;
+    }
+
+    .container-carteira form {
+        flex-direction: column;
+    }
+
+    .form-vacina .data-medico {
+        gap: 7px;
+    }
+}

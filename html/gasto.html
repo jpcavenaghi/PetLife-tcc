@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLife - Controle de Gastos</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../src/css/style-gastos.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/font-awesome.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../src/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../src/image/dinheiro.png" alt="bolsa de dinheiro">
+        <h1>Controle De Gastos</h1>
+    </header>
+    <main>
+
+        <p id="totalGastoText"></p>
+        
+        <div class="novo-item">
+            <div class="descricao">
+                <label for="desc">Descrição:</label>
+                <input type="text" id="desc">
+            </div>
+
+            <div class="quantia">
+                <label for="quantia">Valor</label>
+                <input type="number" id="quantia">
+            </div>
+
+            <button id="btnNovo">Incluir</button>
+        </div>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="coluna-quantia">Valor</th>
+                        <th class="coluna-tipo">Tipo</th>
+                        <th class="coluna-acao"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="../src/js/gasto.js"></script>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLife - Home</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../src/css/style-home.css">
+    <link rel="stylesheet" href="../src/css/responsive-home.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/font-awesome.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../src/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="logo" href="#">
+            <img src="../src/image/logo.png" alt="imagem de logo" class="img-logo" />
+            <h1>PetLife</h1>
+        </div>
+
+        <nav>
+
+            <input type="checkbox" id="menu-hamburguer">
+            <label for="menu-hamburguer">
+                <div class="menu-hamburguer">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul class="menu">
+                <li class="menu-item"><a href="#perfis"><i class="fa-solid fa-paw"></i> Perfis</a></li>
+                <li class="menu-item"><a href="#produtos"><i class="fa-solid fa-shop"></i> Produtos</a></li>
+                <li class="menu-item"><a href="#dicas"><i class="fa-solid fa-lightbulb"></i> Dicas</a></li>
+                <li class="menu-item"><a href="#adote"><i class="fa-solid fa-heart"></i> Adote</a></li>
+                <li class="menu-item"><a onclick="sair()" class="btn-sair">Sair <i
+                            class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="texto-hero">
+            <h2 id="logado"></h2>
+            <p>Estamos emocionados por você ter escolhido nossa plataforma dedicada aos seus queridos amigos de quatro
+                patas. No PetLife, compartilhamos sua paixão por animais de estimação e estamos aqui para tornar a vida
+                ao lado deles ainda mais especial e fácil.</p>
+        </div>
+
+        <img src="../src/image/cachorro.png" alt="Imagem de cachorro" class="img-hero">
+    </section>
+
+    <section id="perfis" class="perfis">
+
+        <h2><i class="fa-solid fa-paw"></i> Perfis</h2>
+
+        <div class="form-pet" id="formPet">
+            <div class="titulo-e-fechar">
+                <h3><strong>CADASTRO</strong> DO PET</h3>
+                <i id="btnSairForm" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <form id="formulario" action="">
+
+                <label for="imagemPet">Imagem de Perfil:</label>
+                <input type="file" id="imagemPet">
+
+                <label id="labelNome" for="nomePet">Nome:</label>
+                <input type="text" name="" id="nomePet">
+
+                <label id="labelIdade" for="idadePet">Idade:</label>
+                <input type="number" name="" id="idadePet">
+
+                <label id="labelRaca" for="racaPet">Raça:</label>
+                <input type="text" name="" id="racaPet">
+
+                <label>Sexo:</label>
+
+                <div class="sexo-radio">
+                    <label for="F">Fêmea</label>
+                    <input type="radio" name="sexo" id="F" value="Fêmea">
+
+                    <label for="M">Macho</label>
+                    <input type="radio" name="sexo" id="M" value="Macho">
+                </div>
+
+                <input type="submit" value="CADASTRAR" id="submitPet">
+            </form>
+        </div>
+
+        <div class="form-edit-pet" id="formEditPet">
+            <div class="titulo-e-fechar">
+                <h3><strong>EDIÇÃO</strong> DO PET</h3>
+                <i id="btnSairFormEdit" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <form id="formEditPet" action="">
+
+                <label for="imagemPet">Imagem de Perfil:</label>
+                <input type="file" id="imagemEditPet">
+
+                <label id="labelNome" for="nomePet">Nome:</label>
+                <input type="text" name="" id="nomeEditPet">
+
+                <label id="labelIdade" for="idadePet">Idade:</label>
+                <input type="number" name="" id="idadeEditPet">
+
+                <label id="labelRaca" for="racaPet">Raça:</label>
+                <input type="text" name="" id="racaEditPet">
+
+                <label>Sexo:</label>
+
+                <div class="sexo-radio">
+                    <label for="Fedit">Fêmea</label>
+                    <input type="radio" name="sexoEdit" id="Fedit" value="Fêmea">
+
+                    <label for="Medit">Macho</label>
+                    <input type="radio" name="sexoEdit" id="Medit" value="Macho">
+                </div>
+
+                <div class="container-botoes">
+                    <input type="submit" value="SALVAR" id="submitEditPet">
+                    <button id="btnExcludePet">EXCLUIR</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="cardsPets">
+            <button id="btnAddPet"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+    </section>
+    <section class="produtos" id="produtos">
+
+        <h2><i class="fa-solid fa-shop"></i> Produtos ᵇʸ <img src="../src/image/petStore.png" alt=""></h2>
+
+        <h3 class="subtitulo">Confira alguns produtos que a nossa parceira Pet Store oferece!!</h3>
+
+        <div class="produtos-container">
+            <div class="item-produtos">
+                <img src="../src/image/racao-para-animais.png" alt="imagem do produto">
+                <h4 class="nome-produto">Rações</h4>
+            </div>
+
+            <div class="item-produtos">
+                <img src="../src/image/produtos-de-higiene-pessoal.png" alt="imagem do produto">
+                <h4 class="nome-produto">Higiene e Limpeza</h4>
+            </div>
+
+            <div class="item-produtos">
+                <img src="../src/image/medicina.png" alt="imagem do produto">
+                <h4 class="nome-produto">
+                    Medicina e Saúde</h4>
+            </div>
+
+            <div class="item-produtos">
+                <img src="../src/image/gado.png" alt="imagem do produto">
+                <h4 class="nome-produto">
+                    Outros Animais</h4>
+            </div>
+
+            <div class="item-produtos">
+                <img src="../src/image/colarinho.png" alt="imagem do produto">
+                <h4 class="nome-produto">
+                    Acessórios</h4>
+            </div>
+
+            <div class="item-produtos">
+                <img src="../src/image/casinha-de-cachorro.png" alt="imagem do produto">
+                <h4 class="nome-produto">
+                    Casinhas</h4>
+            </div>
+
+        </div>
+
+        <div class="container-redes-sociais">
+
+            <h3 class="titulo-redes-sociais">
+                <div class="risco"></div>Visite as redes sociais para ter acesso a diversos produtos e promoções!!!<div
+                    class="risco"></div>
+            </h3>
+
+            <div class="redes-sociais">
+                <a target="_blank"
+                    href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FVNC47TDV24FIN1&e=AT3MfCLQNPPgLLe09wL3irBQr_17CESPH-Kg5BsZefMFOOXJPMiQfoH8S14mmSRxb5vfo9wlaRo2XIKIIQRcD7lxQ51Ww9e8PuhWPZsMElIKkPII"><button
+                        class="rede-social whatsapp">Whatsapp <i class="fa-brands fa-whatsapp"></i></button></a>
+                <a target="_blank" href="https://www.instagram.com/petstore_mmirim/"><button
+                        class="rede-social instagram">Instagram <i class="fa-brands fa-instagram"></i></button></a>
+                <a target="_blank" href="https://www.google.com/maps/dir//Av.+Prof.+Adib+Chaib,+2632+-+Centro,+Mogi+Mirim+-+SP,+13801-300/@-22.4319736,-47.035192,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8f84d12baaaab:0xcb2b96e2513f903f!2m2!1d-46.9527904!2d-22.4319945?entry=ttu"><button class="rede-social localizacao">Localização <i
+                            class="fa-solid fa-location-dot"></i></button></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="dicas" id="dicas">
+        <h2><i class="fa-solid fa-lightbulb"></i> Dicas</h2>
+
+        <div class="container-dicas">
+            <div class="item-dicas">
+                <div class="texto">
+                    <h4 class="titulo">Picolé para seu Amigo Peludo! 🐶🐱</h4>
+                    <p class="descricao">Quem disse que nossos amigos de quatro patas não podem saborear um refrescante
+                        picolé em um dia quente? Este picolé de coco é a guloseima perfeita para manter seu peludo feliz
+                        e fresco. E o melhor de tudo, é super fácil de fazer!</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YxxfjwSfvVU?si=l34zWxpTeAI-V6jj"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <span><strong>Créditos:</strong> Perito Animal</span>
+                </div>
+            </div>
+
+            <div class="item-dicas">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7vyh37U03k4?si=GGGv4XFV1y6osg-v"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <span><strong>Créditos:</strong> Jeito Felino</span>
+                </div>
+                <div class="texto">
+                    <h4 class="titulo">O Guia Definitivo para Cuidar do seu Gato: Dicas Que Todo Dono de Gato Precisa
+                        Saber! 🐱📹</h4>
+                    <p class="descricao">Você já se perguntou como se tornar o melhor amigo do seu gato? Bem, você veio
+                        ao lugar certo! Este vídeo é como um manual de cuidados para o seu amigo felino, cheio de dicas
+                        práticas que farão você e seu gato ronronar de alegria.</p>
+                </div>
+            </div>
+
+            <div class="item-dicas">
+                <div class="texto">
+                    <h4 class="titulo">Top 10 Animais Exóticos que Você Pode Ter em Casa: Aventuras do Bizarro ao
+                        Adorável!" 🐾🌍</h4>
+                    <p class="descricao">Bem-vindo ao vídeo que vai te levar em uma jornada selvagem, apresentando os 10
+                        animais exóticos mais incríveis que você pode, surpreendentemente, ter como companheiros em sua
+                        própria casa! Prepare-se para conhecer algumas das criaturas mais intrigantes e inesperadas do
+                        mundo animal.</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-MB0aJGelNY?si=pBIrb-m6921miDxO"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <span><strong>Créditos:</strong> CuriosaMente com Lorena</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="adote" id="adote">
+        <img src="../src/image/cachorro2.png" alt="Foto de cachorro">
+
+        <div class="texto">
+            <h2>Conheça a HelPets!!</h2>
+            <p>Estamos emocionados em anunciar uma parceria incrível com o grupo Helpets, dedicado a tirar cães de
+                situações de rua e dar a eles uma segunda chance na vida. Esta colaboração é mais do que uma parceria, é
+                uma missão conjunta para tornar o mundo um lugar melhor para nossos amigos peludos.
+            </p>
+            <a href=""><button class="btn-helpets">Visite <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+        </div>
+
+
+    </section>
+
+
+</body>
+<script src="../src/js/home.js"></script>
+
+</html>

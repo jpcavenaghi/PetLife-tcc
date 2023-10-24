@@ -1,0 +1,110 @@
+body {
+    background-color: #CC3B3B;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    color: #fff;
+}
+
+.header img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.header i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---- CONTAINER-LEMBRETES ---- */
+
+.container-lembretes{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ---- FORM ---- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    max-width: 500px;
+    padding: 30px;
+    margin: auto;
+    color: #fff;
+    background-color: #FF1616;
+    margin: auto;
+}
+
+form label{
+    font-size: 1.2rem;
+}
+
+form input {
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    padding: 5px;
+}
+
+form button{
+    padding: 5px;
+    border: 3px solid #32BD00;
+    background-color: #32BD00;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover{
+    transition: 0.7s;
+    background-color: #fff;
+    color: #32BD00;
+}
+
+/* ---- LEMBRETES ---- */
+
+.lembretes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lembretes .card-lembrete{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    border-radius: 30px;
+    background-color: #FF1616;
+    color: #fff;
+    width: 300px;
+    height: 150px;
+}
+
+.card-lembrete i{
+    cursor: pointer;
+}
+
+.card-lembrete, 
+form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
